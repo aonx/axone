@@ -31,4 +31,5 @@
    * http://www.eejournal.com/archives/articles/20150420-protocols/
    * Simple MQ - https://realtimelogic.com/ba/doc/?url=SMQ.html
    * http://bb-smartsensing.com/basics-of-mqtt/
+   * http://dejanglozic.com/2014/05/06/rest-and-mqtt-yin-and-yang-of-micro-service-apis/
    * https://github.com/fritzy/SleekXMPP/wiki/Stanza-Objects
