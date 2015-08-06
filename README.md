@@ -27,6 +27,6 @@
       * protobuf
 
 ## Links
-   1 https://allseenalliance.org/
-   1 http://www.eejournal.com/archives/articles/20150420-protocols/
-   1 Simple MQ - https://realtimelogic.com/ba/doc/?url=SMQ.html
+   * https://allseenalliance.org/
+   * http://www.eejournal.com/archives/articles/20150420-protocols/
+   * Simple MQ - https://realtimelogic.com/ba/doc/?url=SMQ.html
