@@ -31,3 +31,4 @@
    * http://www.eejournal.com/archives/articles/20150420-protocols/
    * Simple MQ - https://realtimelogic.com/ba/doc/?url=SMQ.html
    * http://bb-smartsensing.com/basics-of-mqtt/
+   * https://github.com/fritzy/SleekXMPP/wiki/Stanza-Objects
