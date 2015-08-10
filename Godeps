@@ -1,0 +1,12 @@
+# dependencies
+
+# utilities
+github.com/elarasu/handy/version
+github.com/elarasu/handy/logger
+github.com/spf13/cobra
+
+# message q
+github.com/surge/surgemq/service
+
+# transport
+golang.org/x/net/websocket
