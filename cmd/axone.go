@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
+	"path/filepath"
+	"runtime"
 
+	"github.com/chobie/momonga/server"
 	log "github.com/elarasu/handy/logger"
 	"github.com/elarasu/handy/version"
 	"github.com/spf13/cobra"
@@ -28,6 +32,16 @@ func startMq() {
 	// Listen and serve connections at localhost:1883
 	err := svr.ListenAndServe("tcp://:" + port)
 	fmt.Printf("%v", err)
+}
+
+func startMomonga(configFile string) {
+	pid := os.Getpid()
+	log.Info("Server pid: ", pid)
+
+	confpath, _ := filepath.Abs(configFile)
+	app := server.NewApplication(confpath)
+	app.Start()
+	app.Loop()
 }
 
 func printBinary(s []byte) {
@@ -54,6 +68,8 @@ func startWsServer(httpPort string, path string) {
 }
 
 func main() {
+	var configFile string
+	runtime.GOMAXPROCS(runtime.NumCPU())
 	var Cmd = &cobra.Command{
 		Use:   "axone",
 		Short: "axone command line",
@@ -76,11 +92,14 @@ func main() {
 		Short: "start the broker",
 		Long:  `Start the message broker from command line`,
 		Run: func(cmd *cobra.Command, args []string) {
+			fmt.Println(configFile)
+			startMomonga(configFile)
 			// start surge
-			startMq()
+			//startMq()
 			//startWsServer(":5080", "/mqtt")
 		},
 	}
+	startCmd.Flags().StringVarP(&configFile, "config", "c", "", "config file")
 	Cmd.AddCommand(startCmd)
 	Cmd.Execute()
 }
