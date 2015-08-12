@@ -9,8 +9,8 @@ import (
 	"runtime"
 
 	"github.com/chobie/momonga/server"
-	log "github.com/elarasu/handy/logger"
-	"github.com/elarasu/handy/version"
+	log "github.com/elarasu/basis/logger"
+	"github.com/elarasu/basis/version"
 	"github.com/spf13/cobra"
 	"github.com/surge/surgemq/service"
 	"golang.org/x/net/websocket"

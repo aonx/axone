@@ -1,8 +1,8 @@
 # dependencies
 
 # utilities
-github.com/elarasu/handy/version
-github.com/elarasu/handy/logger
+github.com/elarasu/basis/version
+github.com/elarasu/basis/logger
 github.com/spf13/cobra
 
 # message q
