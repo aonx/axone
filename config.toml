@@ -3,7 +3,7 @@
 
 [server]
 log_file = "stdout"
-log_level = "error"
+log_level = "debug"
 pid_file = ""
 
 user = "momonga"
@@ -24,11 +24,11 @@ cafile = ""
 certfile = ""
 keyfile = ""
 
-httpport = 9000
+http_port = 7780
 websocket_mount = "/mqtt"
 
 # provide http debug features (see server/http.go)
-http_debug = false
+http_debug = true
 
 [engine]
 enable_permission = false

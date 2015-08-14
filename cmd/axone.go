@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/chobie/momonga/server"
+	"github.com/aonx/momonga/server"
 	log "github.com/elarasu/basis/logger"
 	"github.com/elarasu/basis/version"
 	"github.com/spf13/cobra"

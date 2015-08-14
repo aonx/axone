@@ -7,7 +7,7 @@ github.com/spf13/cobra
 
 # message q
 github.com/surge/surgemq/service
-github.com/chobie/momonga
+github.com/aonx/momonga/momonga
 
 # transport
 golang.org/x/net/websocket
