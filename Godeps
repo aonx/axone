@@ -6,7 +6,6 @@ github.com/elarasu/basis/logger
 github.com/spf13/cobra
 
 # message q
-github.com/surge/surgemq/service
 github.com/aonx/momonga/momonga
 
 # transport
