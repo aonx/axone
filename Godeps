@@ -3,6 +3,7 @@
 # utilities
 github.com/elarasu/basis/version
 github.com/elarasu/basis/logger
+github.com/elarasu/basis/stringutils
 github.com/spf13/cobra
 
 # message q
