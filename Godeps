@@ -6,6 +6,9 @@ github.com/elarasu/basis/logger
 github.com/elarasu/basis/stringutils
 github.com/spf13/cobra
 
+# rest
+github.com/bndr/gopencils
+
 # message q
 github.com/aonx/momonga/momonga
 

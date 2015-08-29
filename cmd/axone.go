@@ -20,6 +20,10 @@ func startMq(configFile string) {
 
 	confpath, _ := filepath.Abs(configFile)
 	app := server.NewApplication(confpath)
+
+	//fmt.Println(app)
+	//app.On("connect")
+
 	app.Start()
 	app.Loop()
 }
